@@ -5,7 +5,7 @@ export function orderByProps(object, sortedKeys) {
     sortedKeys,
     Object.keys(object)
       .filter((k) => !sortedKeys.includes(k))
-      .sort()
+      .sort(),
   );
   allSortedKeys.forEach((k) => {
     result.push({
